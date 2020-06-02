@@ -1,0 +1,49 @@
+/* No CSS */
+/*# sourceMappingURL=vars.css.map */
+@media screen and (max-width: 900px) { #top-bar { top: 0; z-index: 12; height: 70px; }
+  .menu { -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+  .icon-menu:hover { cursor: pointer; }
+  .mostrar { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); opacity: 1; }
+  .icon-menu { width: 25px; height: 25px; display: block; z-index: 999; position: absolute; right: 35px; }
+  .icon-line { display: block; width: 25px; height: 4px; background: #5038A0; position: absolute; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+  .icon-line:nth-child(2)::before { content: "MENU"; display: block; color: #5038A0; margin: -7px 0 0 -60px; font-weight: bold; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+  .icon-line:nth-child(2) { margin-top: 11px; }
+  .icon-line:nth-child(3) { margin-top: 22px; }
+  /*Estilos js*/
+  .rotate-1 { margin-top: 12px !important; -webkit-transform: rotate(45deg) scaleX(-1) scale(0.75); -ms-transform: rotate(45deg) scaleX(-1) scale(0.75); transform: rotate(45deg) scaleX(-1) scale(0.75); background-color: #FF2C9C; }
+  .rotate-2 { margin-top: 12px !important; opacity: 0; background-color: #FF2C9C; }
+  .rotate-3 { margin-top: 12px !important; -webkit-transform: rotate(-45deg) scaleX(-1) scale(0.75); -ms-transform: rotate(-45deg) scaleX(-1) scale(0.75); transform: rotate(-45deg) scaleX(-1) scale(0.75); background-color: #FF2C9C; }
+  header { -webkit-box-shadow: 0; box-shadow: 0; }
+  header nav li ul li a:hover { border-bottom: solid 3px transparent; }
+  header nav { height: calc(100vh - 80px); margin-top: 30px; position: absolute; right: 0; width: 350px; text-align: right; -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-transform: scale(0); -ms-transform: scale(0); transform: scale(0); opacity: 0; -webkit-transform-origin: top right; -ms-transform-origin: top right; transform-origin: top right; padding-right: 35px; overflow-y: scroll; }
+  header nav ul li { display: block; margin: 15px 0; padding-bottom: 15px; border-bottom: solid 2px #f1f1f1; }
+  header nav ul li ul { position: relative; }
+  header nav li { font-size: 18px; }
+  header nav ul li ul li { background: #ecf2f7; }
+  header a { color: #5a5959; }
+  header a:hover { color: #5a5959; }
+  iframe { max-height: 480px; }
+  .cover { height: auto; min-height: 500px; }
+  .cover img { height: auto; width: auto; }
+  .section { height: auto; padding: 50px 0; } }
+
+@media screen and (max-width: 780px) { .cover img { display: none; }
+  #benefits:nth-child(1) { display: none; }
+  #about:nth-child(2) { display: none; }
+  .cover-single { max-height: 200px; overflow: hidden; } }
+
+@media screen and (max-width: 480px) { .cover-single { max-height: 125px; overflow: hidden; }
+  .logo { height: 40px; width: 120px; }
+  #block-bottom { text-align: center; }
+  .cover .title { font-size: 33px; }
+  .title { font-size: 28px; }
+  .text-sm { font-size: 18px; }
+  .text-md { font-size: 20px; }
+  .text-lg { font-size: 22px; }
+  .text-xl { font-size: 28px; }
+  .display-4 { font-size: 2rem; }
+  .display-5 { font-size: 2.5rem; }
+  footer ul li { display: block; margin-bottom: 1em; }
+  footer #block-bottom ul li { margin: 0; display: block; } }
+
+/*# sourceMappingURL=responsive.css.map */
