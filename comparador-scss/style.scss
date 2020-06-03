@@ -39,7 +39,7 @@ p { font-size: 16px; }
 a { color: #383838; text-decoration: none;}
 * { font-family: $font-primary;}
 
-#main { transition: $transition; opacity: 0; max-width: 1800px; margin: 0 auto;} 
+#main { max-width: 1800px; margin: 0 auto;} 
 img { max-width: 100%; height: auto;}
 /** TOP BAR **/
 

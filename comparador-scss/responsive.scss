@@ -1,8 +1,6 @@
 @import "vars.scss";
 
-@media screen and (max-width: 1260px) {
-
-}
+@media screen and (max-width: 1260px) {}
 
 @media screen and (max-width: 900px) {
   #top-bar { top: 0; z-index: 12; height: 70px;}
@@ -23,9 +21,14 @@
   .rotate-3 {margin-top: 12px !important; transform: rotate(-45deg) scaleX(-1) scale(0.75); background-color: $primary;}
 
   header { box-shadow: 0;}
+  header nav { background-color: $secondary; height: calc(100vh - 80px); margin-top: 30px; position: absolute; right: 0; width: 100%; text-align: right; transition: $transition; transform: scale(0); opacity: 0; transform-origin: top right; padding-right: 35px; overflow-y: scroll;}
+  header nav a { border-bottom: none; color: $gray-2;}
+  header nav a::after { content: " 🔹";}
+  header nav a:hover { color: white;}
+  header nav a:hover { border-bottom: none;}
   header nav li ul li a:hover { border-bottom: solid 3px transparent; }
-  header nav { height: calc(100vh - 80px); margin-top: 30px; position: absolute; right: 0; width: 350px; text-align: right; transition: $transition; transform: scale(0); opacity: 0; transform-origin: top right; padding-right: 35px; overflow-y: scroll;}
-  header nav ul li{ display: block; margin: 15px 0; padding-bottom: 15px; border-bottom: solid 2px #f1f1f1;}
+  header nav ul li { display: block; margin: 15px 0; padding: 8px 0; border-bottom: none; transition: $transition;}
+  header nav ul li:hover { background-color: rgb(71, 48, 145); }
   header nav ul li ul{ position: relative;}
   header nav li { font-size: 18px;}
   header nav ul li ul li { background: $gray;}
