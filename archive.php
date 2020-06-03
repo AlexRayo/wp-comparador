@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <!--INICIO main-->
 <div class="container archive col-12 col-xl-10">
-	<h2 class="text-center display-4 mt-5 py-5 bg-secondary text-white mb-5" ><?php single_cat_title($prefix='',$display=true); ?></h2>	
+	<h2 class="text-center mt-5 py-5 bg-secondary text-white mb-5 text-uppercase text-bold" ><?php single_cat_title($prefix='',$display=true); ?></h2>	
 	<form name="form" action="" method="post" class="text-center">		
 		<select name="tipo" class="my-select custom-select" onchange="this.form.submit()" style="max-width: 350px;">
-			<option value="Soluciones" selected>Seleccione su tipo de préstamo</option>
+			<option value="Soluciones" selected>👉 Seleccione su tipo de préstamo</option>
 			<option value="Minicredito">Minicredito</option>
 			<option value="prestamos-personales">Préstamos Personales</option>
 			<option value="prestamos-hipotecarios">Préstamos Hipotecarios</option>
@@ -16,7 +16,7 @@
 	
 	<?php $my_cat = $_POST['tipo']; ?>
 	<?php query_posts('category_name='.$my_cat); ?>
-	<h4 class="text-center mt-3 text-uppercase mt-4"><?php single_cat_title($prefix='',$display=true); ?></h4>
+	<h4 class="text-center mt-3 text-uppercase"><?php single_cat_title($prefix='',$display=true); ?></h4>
 	<?php
 		switch ($my_cat) {
 			case 'Minicredito':
@@ -38,7 +38,6 @@
 				echo '<p class="text-center">(Puede buscar según el tipo de crédito que necesite)</p>';
 				break;
 		}
-
 	?>
 	
 	<div class="row d-flex justify-content-between col-12 col-md-8 mx-auto mt-5">	
