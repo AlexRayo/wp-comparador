@@ -31,7 +31,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 img#wpstats { display: none; }
 
 //ESTE TIPO DE COMENTARIO CON DOBRE SLASH NO SE RENDERIZA
-// purgecss --css style.css --content *.php --out js
+// purgecss --css style.css --content *.php --out ./
 
 /********* GENERAL & FORMATING **********/
 #wpadminbar { position: fixed; }

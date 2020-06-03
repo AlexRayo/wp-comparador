@@ -14,8 +14,7 @@ function asyncBody(){
 function load(){
   setTimeout(function(){
     asyncBody()
-  }, 0);  
-
+  }, 0); 
 
   if (btn_cover && btn_benefits != null){
     btn_cover.classList.add('btn','btn-lg','btn-primary');
@@ -23,15 +22,12 @@ function load(){
   }
   if (btn_about != null){
     btn_about.classList.add('btn', 'btn-secondary');
-  }
-  
+  } 
   
   if (window.innerWidth < 1262) {
     header.classList.add("top-bar-js");
   }
 }
-
-
 
 
 window.onscroll = function() {topBar()};
